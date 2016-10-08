@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/koi">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress|textWebEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEditTxt"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textIsSelectable="false"
+        android:hint="E-mail"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/emailTextView"
+        android:layout_alignLeft="@+id/emailEditTxt"
+        android:layout_alignStart="@+id/emailEditTxt"
+        android:textColor="#f9f6c5"
+        android:layout_below="@+id/emailEditTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/passwordEditTxt"
+        android:padding="5dp"
+        android:layout_below="@id/emailEditTxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textIsSelectable="false"
+        android:hint="Password"
+        android:background="#ffffff"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/passwordTextView"
+        android:layout_below="@+id/passwordEditTxt"
+        android:layout_alignLeft="@+id/passwordEditTxt"
+        android:layout_alignStart="@+id/passwordEditTxt"
+        android:textColor="#f9f6c5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginBtn"
+        android:layout_below="@+id/toggleTxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:id="@+id/toggleTxt"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/passwordTextView"
+        android:layout_alignRight="@+id/passwordEditTxt"
+        android:layout_alignEnd="@+id/passwordEditTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign Up"
+        android:id="@+id/signUpTxt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
